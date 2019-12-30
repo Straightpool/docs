@@ -16,13 +16,17 @@ After seeing this error no balance has left the account wallet.
 The error at the end is meaningless, this is just an account balance check. The transaction fails because it was attempted to send the whole balance of the account wallet not accounting for the transaction fee.
 
 First check the available balance on the account wallet you want to send to a Daedalus rewards wallet:
+```
 jcli rest v0 account get $(cat ~/files/account.addr) -h http://127.0.0.1:${REST_PORT}/api
+```
 
 Now subtract 400000 lovelaces from this amount, this is the value you want to send to deplete the account balance.
 
 Use the send-money.sh script as usual:
+```
 ./send-money.sh <A daedalus rewards wallet address> <account balance - 400000)> <REST port> <Private key of account wallet>
-  
+```
+
 Now the transaction will go through and you can see the funds in the Daedalus rewards wallet. The error in the end does not matter.
 
 When you delegate from Daedalus rewards wallet the address used will be the one you sent your account balance to, so the pledge address from now on is the one Daedalus rewards wallet you selected for <A daedalus rewards wallet address>.

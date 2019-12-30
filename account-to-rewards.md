@@ -22,9 +22,9 @@ jcli rest v0 account get $(cat ~/files/account.addr) -h http://127.0.0.1:${REST_
 
 Now subtract 400000 lovelaces from this amount, this is the value you want to send to deplete the account balance.
 
-Use the send-money.sh script as usual:
+Use the send-money.sh script as usual, adapt as needed:
 ```
-./send-money.sh <A daedalus rewards wallet address> <account balance - 400000)> <REST port> <Private key of account wallet>
+./send-money.sh <A daedalus rewards wallet address> <account balance - 400000)> ${REST_PORT} $(cat ~/files/account.prv)
 ```
 
 Now the transaction will go through and you can see the funds in the Daedalus rewards wallet. The error in the end does not matter.

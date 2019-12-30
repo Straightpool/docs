@@ -29,4 +29,4 @@ Use the send-money.sh script as usual, adapt as needed:
 
 Now the transaction will go through and you can see the funds in the Daedalus rewards wallet. The error in the end does not matter.
 
-When you delegate from Daedalus rewards wallet the address used will be the one you sent your account balance to, so the pledge address from now on is the one Daedalus rewards wallet you selected for <A daedalus rewards wallet address>.
+When you delegate from Daedalus rewards wallet the address used will be the one you sent your account balance to, so the pledge address from now on is the one Daedalus rewards wallet you picked as recipient of your account wallet balance you created in error.
